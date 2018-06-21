@@ -31,6 +31,7 @@ public class TimedServer {
                         ch.pipeline().addLast(new TimeServerHandler());
                     }
                 })
+
         ;
 
         ChannelFuture sync = serverBootstrap.bind(8080).sync();
